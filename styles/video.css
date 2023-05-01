@@ -1,0 +1,144 @@
+
+
+.video-grid{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+@media (max-width: 750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width : 1049px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1050px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+.thumbnail{
+  width: 100%;
+}
+
+.video-title{
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 0;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+
+.video-author{
+  font-size: 12px;
+  color: rgb(107, 107, 107);
+  margin-bottom: 0;
+}
+
+.video-stats{
+  margin-top: 4px;
+  color: rgb(107, 107, 107);
+  font-size: 13px;
+}
+
+
+
+.thumbnail_row{
+  margin-bottom: 9px;
+  position: relative;
+}
+
+.video-time{
+  
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  background-color: rgba(0,0,0,0.90);
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  border-radius: 2px;
+}
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+
+}
+
+.channel_picture {
+  
+  vertical-align: top;
+}
+ 
+.channel-picture-container{
+  position: relative;
+  display: inline-block;
+}
+
+.channel-tooltip{
+  position: absolute;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  padding: 12px 12px;
+  background-color: white;
+  box-shadow: 3px 1px 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  align-items: center;
+  top: 55px;
+  z-index: 300;
+  pointer-events: none;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.channel-picture-container:hover .channel-tooltip{
+  opacity: 1;
+}
+.tooltip-text-container{
+  display: flex;
+  flex-direction: column;
+}
+.channel-tooltip-picture{
+  width: 45px;
+  height: 45px;
+  border-radius: 24px;
+  margin-right: 8px;
+}
+.channel-tooltip-name{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.channel-tooltip-stats{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+
+}
+
+
+
+.profile_picture{
+  width: 36px;
+  border-radius: 25px;
+  
+  
+}
